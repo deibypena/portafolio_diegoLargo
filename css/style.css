@@ -169,7 +169,7 @@ span {
 #header {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
 }
 
 .profile-image {
@@ -188,12 +188,6 @@ span {
   }
 }
 
-.division {
-  width: 100%;
-  height: 2px;
-  background-color: var(--card-background);
-  margin: 5.5rem 0;
-}
 
 /* Projects */
 #projects {
@@ -215,11 +209,11 @@ span {
 }
 
 .card .project-bio p {
-  font-size: 0.83rem;
+  font-size: 1rem;
 }
 
 .card .project-bio h3 {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 
 .project-info {
@@ -239,14 +233,24 @@ span {
   left: 10px;
 }
 
+.project-link a i {
+  font-size: 1.5rem;
+}
+
 /* Skills */
 #skills {
   display: flex;
   flex-direction: column;
-  margin: 2rem auto 5rem;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
 }
 
-@keyframes load{0%{stroke-dashoffset:0}}
+@keyframes load {
+  0% {
+    stroke-dashoffset: 0
+  }
+}
 
 .progress {
   position: relative;
@@ -283,8 +287,8 @@ span {
 }
 
 .progress svg {
-  width: 7rem;
-  height: 7rem;
+  width: 9em;
+  height: 9rem;
 }
 
 .progress svg:nth-child(2) {
@@ -425,5 +429,3 @@ span {
     width: 80%;
   }
 }
-
-
